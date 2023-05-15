@@ -1,57 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+// Kaitlin Radford kaitlinradford@comcast.net
+
+import React, { useState, useEffect } from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+
+import EditMessage from './components/edit/editMessage';
+import MessageNode from './components/node/messageNode';
+
 import './App.css';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#007DFF'
+    }
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <Container>
+      <Grid container spacing={10} direction={'row'} wrap={'wrap'}>
+        <Grid item>
+          <EditMessage/>
+        </Grid>
+        <Grid item>
+          <MessageNode/>
+        </Grid>
+      </Grid>
+    </Container>
+    </ThemeProvider>
   );
 }
 
