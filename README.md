@@ -1,8 +1,8 @@
-# Connectly Eng Interview
+# Frontend Interview
 
 ## Objective
 
-A basic version of the template builder sidebar and message node that allows a customer to create and visualize a WhatsApp template
+Build a basic version of their template builder sidebar and message node that allows a customer to create and visualize a WhatsApp template
 
 ## Preview
 
