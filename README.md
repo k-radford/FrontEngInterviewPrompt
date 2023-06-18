@@ -2,7 +2,11 @@
 
 ## Objective
 
-A basic version of the template builder sidebar and message node that allows a customer to create and visualize a whatsapp template
+A basic version of the template builder sidebar and message node that allows a customer to create and visualize a WhatsApp template
+
+## Preview
+
+https://github.com/k-radford/FrontEngInterviewPrompt/assets/38546146/00aad07e-726d-4952-b135-5a3572b8fdf6
 
 ## Built By
 
